@@ -1,0 +1,33 @@
+<div class="card-container">
+  <div class="post-card">
+    <div class="user">
+      <img class="avatar" [src]="post.avatar" alt="">
+      <div class="username">{{post.username}}</div>
+    </div>
+
+    <div class="title-tag">
+      <div class="bubble">
+        <div class="title" (click)="onDetail.emit()">{{post.title}}</div>
+      </div>
+
+      <div class=tag>
+        <div>{{post.tag1}}</div>
+        <div>{{post.tag2}}</div>
+      </div>
+    </div>
+
+    <div class="replies-views">
+      <div>
+        <div class="replies-text">Replies: </div>
+        <div class="views-text">Views: </div>
+      </div>
+
+      <div class="replies-views-number">
+        <div class="replies">{{post.replies}}</div>
+        <div class="views">{{post.views}}</div>
+      </div>
+    </div>
+
+    <div class="post-date">{{post.postDate}}</div>
+  </div>
+</div>

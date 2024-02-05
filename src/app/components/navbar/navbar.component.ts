@@ -1,4 +1,3 @@
-import { routes } from './../../app.routes';
 import { Component } from '@angular/core';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
@@ -11,21 +10,21 @@ import { Router } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  constructor(private router: Router  ,private authService: AuthService){}
-
+  constructor(private router: Router, private authService: AuthService) { }
 
   isAuth = false
-  logIn(){
+
+  logIn() {
     this.authService.login()
     this.isAuth = true
   }
 
-  logOut(){
+  logOut() {
     this.authService.logout()
     this.isAuth = false
   }
 
-  linkToPostDetail(){
-    this.router.navigate(["post"])
+  returnHomePage() {
+    this.router.navigate([""])
   }
 }

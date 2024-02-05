@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.home {
+  color: white;
+  font-size: 2rem;
+  margin-left: 100px;
+  cursor: default;
+}
+
+.post-button {
+  align-self: center;
+  margin-right: 100px;
+
+  height: 2rem;
+  width: 6rem;
+
+  border: none;
+  border-radius: 5px;
+
+  font-weight: 600;
+  background-color: #AEDCC0;
+  cursor: pointer;
+}
+
+.post-button:hover {
+  filter: brightness(1.2);
+  transition: 1ms;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}

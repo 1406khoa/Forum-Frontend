@@ -1,28 +1,28 @@
 <span class="navbar-container">
 
-  <span class="left"><button id="logo-btn" (click)="linkToPostDetail()" >KHOA</button></span>
+  <span class="left"><button id="logo-btn" (click)="returnHomePage()">KHOA</button></span>
 
-  <span class="middle"><input type="text" placeholder="Search" id="input" ></span>
+  <span class="middle"><input type="text" placeholder="Search" id="input"></span>
 
   <span class="right">
     @if(isAuth){
-      <span class="btn-container">
-        <button class="btn" (click)="logOut()">
-          Log out
-        </button>
-      </span>
+    <span class="btn-container">
+      <button class="btn" (click)="logOut()">
+        Log out
+      </button>
+    </span>
 
-      <span>
-        <img class="img" src="../../../assets/login-user.png" alt="">
-      </span>
+    <span>
+      <img class="img" src="../../../assets/login-user.png" alt="">
+    </span>
     }@else{
-      <span class="btn-container">
-        <button class="btn" (click)="logIn()" >Log in</button>
-      </span>
+    <span class="btn-container">
+      <button class="btn" (click)="logIn()">Log in</button>
+    </span>
 
-      <span>
-        <img class="img" src="../../../assets/un-login-user.png" alt="">
-      </span>
+    <span>
+      <img class="img" src="../../../assets/un-login-user.png" alt="">
+    </span>
     }
 
 

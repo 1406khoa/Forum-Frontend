@@ -1,0 +1,125 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: #D9D9D9;
+  border-bottom: 1px solid #6F9283;
+
+  height: 120px;
+  width: 90%;
+
+  cursor: default;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+
+  .avatar {
+    width: 3rem;
+    margin: 8px 0px;
+    cursor: pointer;
+  }
+
+  .username {
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .username:hover {
+    text-decoration: underline;
+  }
+}
+
+.title-tag {
+  width: 60%;
+
+  .bubble {
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+
+    width: fit-content;
+    height: 60px;
+    margin-top: 8px;
+    padding: 5px 15px;
+
+    .title {
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    .title:hover {
+      color: #1F9283;
+      text-decoration: underline;
+    }
+  }
+
+  .bubble::after {
+    display: block;
+    width: 0;
+    content: "";
+    border: 11px solid transparent;
+    position: absolute;
+    border-right-color: white;
+    border-left: 0;
+    left: -10px;
+    top: calc(50% - 22px);
+  }
+
+  .tag {
+    display: flex;
+    flex-direction: row;
+
+    &>div {
+      margin-right: 10px;
+      background-color: #AEDCC0;
+      width: fit-content;
+      font-size: 13px;
+
+      padding: 3px 5px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.replies-views {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 8px;
+
+  .replies-text,
+  .replies {
+    font-size: 18px;
+  }
+
+  .views-text,
+  .views {
+    font-size: 12px;
+  }
+
+  .replies-views-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.post-date {
+  width: 15%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}

@@ -6,13 +6,14 @@ import { Injectable } from '@angular/core';
 export class AuthService {
 
   constructor() { }
+
   isAuth = false
 
-  login(){
+  login() {
     this.isAuth = true
   }
 
-  logout(){
+  logout() {
     this.isAuth = false
   }
 }
